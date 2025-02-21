@@ -1,0 +1,263 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #70c1b3;
+}
+
+button {
+  position: relative;
+  top: 80px;
+  left: 10px;
+  padding: 15px 50px;
+  color: #fff;
+  background-color: #f4d35e;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 1px 3px #50514F;
+  outline: none;
+  transition: .3s;
+}
+
+button:hover,
+button:active {
+  outline: none;
+  background: #50514F;
+  cursor: pointer;
+  transform: translateY(15px);
+}
+
+.game {
+  position: relative;
+  width: auto;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.dice {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.dot {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: -20px 10px 10px -20px;
+  border-radius: 20px;
+  background-color: #f25f5c;
+  box-shadow: inset 2px 2px #d90429;
+}
+
+
+.side {
+  position: absolute;
+  background-color: #ffF;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  line-height: 2em;
+}
+
+.side:nth-child(1) {
+  transform: translateZ(6.2em);
+}
+
+.side:nth-child(6) {
+  transform: rotateY(90deg) translateZ(6.2em);
+}
+
+.side:nth-child(3) {
+  transform: rotateY(-90deg) translateZ(6.2em);
+}
+
+.side:nth-child(4) {
+  transform: rotateX(90deg) translateZ(6.2em);
+}
+
+.side:nth-child(5) {
+  transform: rotateX(-90deg) translateZ(6.2em);
+}
+
+.side:nth-child(2) {
+  transform: rotateY(-180deg) translateZ(6.2em);
+}
+
+.show-1 {
+  transform: rotateX(1440deg) rotateZ(-1440deg);
+}
+
+.show-2 {
+  transform: rotateX(-1800deg) rotateZ(1080deg);
+}
+
+.show-3 {
+  transform: rotateY(810deg) rotateZ(720deg);
+}
+
+.show-4 {
+  transform: rotateX(-810deg) rotateZ(-1080deg);
+}
+
+.show-5 {
+  transform: rotateX(450deg) rotateZ(-720deg);
+}
+
+.show-6 {
+  transform: rotateY(-450deg) rotateZ(-1440deg);
+}
+
+.two-1,
+.three-1,
+.four-1,
+.five-1,
+.six-1 {
+  top: 20%;
+  left: 20%;
+}
+
+.four-3,
+.five-3,
+.six-4 {
+  top: 20%;
+  left: 80%;
+}
+
+.one-1,
+.three-2,
+.five-5 {
+  top: 50%;
+  left: 50%;
+}
+
+.four-2,
+.five-2,
+.six-3 {
+  top: 80%;
+  left: 20%;
+}
+
+.two-2,
+.three-3,
+.four-4,
+.five-4,
+.six-6 {
+  top: 80%;
+  left: 80%;
+}
+
+.six-2 {
+  top: 50%;
+  left: 20%;
+}
+
+.six-5 {
+  top: 50%;
+  left: 80%;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0a0a0a;
+  /* Dark gradient background */
+  color: white;
+  overflow: hidden;
+}
+
+
+
+/* Button Styling */
+button {
+  position: relative;
+  top: 80px;
+  left: 10px;
+  padding: 15px 50px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  /* Neon gradient */
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 10px #ff00ff, 0 0 20px #00ffff;
+  outline: none;
+  transition: all 0.3s ease;
+  bottom: 25px;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  /* Reverse neon gradient */
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5), 0 0 15px #ff00ff, 0 0 30px #00ffff;
+}
+
+
+
+#roll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.gradient-border {
+  width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 115px;
+  top: 25;
+  bottom: 25;
+  position: relative;
+  border: #00ffff;
+  background: #0a0a0a
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  /* Offset to create space for the border */
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
+  background-size: 400% 400%;
+  /* Makes the gradient large enough to animate smoothly */
+  z-index: -1;
+  /* Places the gradient behind the content */
+  border-radius: 15px;
+  /* Matches the border-radius of the container */
+  animation: movingGradient 5s infinite alternate;
+  /* Optional: Smoothly animates the gradient */
+}
+
+/* Animation for the moving gradient */
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
