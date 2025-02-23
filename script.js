@@ -1,10 +1,10 @@
 //TO GRIFFIN: CHANGE THESE TO CHANGE THE PREDETERMINED COMBINATIONS
 const predeterminedValues = [
-  [1, 5],
-  [4, 2],
-  [3, 4],
-  [1, 6],
-  [6, 5]
+  [6, 5],
+  [1, 3],
+  [5, 2],
+  [3, 6],
+  [2, 4]
 ];
 let valCursor = Math.floor((Math.random() * predeterminedValues.length));
 
