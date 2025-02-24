@@ -14,7 +14,7 @@ button {
   color: #fff;
   background-color: #f4d35e;
   border: none;
-  font-size: 20px;
+  font-size: 32px;
   border-radius: 20px;
   box-shadow: 1px 3px #50514F;
   outline: none;
@@ -217,8 +217,8 @@ button:hover {
 }
 
 #roll > button{
-  width: 300px;
-  height: 100px;
+  width: 270px;
+  height: 90px;
 }
 
 
