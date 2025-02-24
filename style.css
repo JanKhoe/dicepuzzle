@@ -191,7 +191,7 @@ button {
   background: linear-gradient(45deg, #ff00ff, #00ffff);
   /* Neon gradient */
   border: none;
-  font-size: 20px;
+  font-size: 32px;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 10px #ff00ff, 0 0 20px #00ffff;
   outline: none;
