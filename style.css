@@ -216,6 +216,11 @@ button:hover {
   align-items: center;
 }
 
+#roll > button{
+  width: 300px;
+  height: 100px;
+}
+
 
 .gradient-border {
   width: 900px;

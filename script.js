@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var elDiceTwo       = document.getElementById('dice2');
   var elComeOut       = document.getElementById('roll');
 
+  elDiceOne.classList.add('show-' + predeterminedValues[valCursor][0]);
+  elDiceTwo.classList.add('show-' + predeterminedValues[valCursor][1]);
+
   elComeOut.onclick   = function () {rollDice();};
 
   function rollDice() {
